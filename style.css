@@ -1,0 +1,77 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(to right, #74ebd5, #ACB6E5);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  /* Container */
+  .container {
+    text-align: center;
+  }
+  
+  /* Quote Box Styling */
+  .quote-box {
+    background: white;
+    padding: 30px 40px;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+    max-width: 500px;
+    width: 100%;
+  }
+  
+  /* Quote Text */
+  #quote {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 20px;
+    transition: opacity 0.5s ease-in-out;
+    min-height: 80px;
+  }
+  
+  /* Fade-in Animation */
+  .fade-in {
+    opacity: 1;
+  }
+  
+  .fade-out {
+    opacity: 0;
+  }
+  
+  /* Button */
+  button {
+    background-color: #008CBA;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 6px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  button:hover {
+    background-color: #006f98;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 600px) {
+    .quote-box {
+      padding: 20px;
+    }
+  
+    #quote {
+      font-size: 1.2rem;
+    }
+  }
+  
